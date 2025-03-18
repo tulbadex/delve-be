@@ -27,10 +27,10 @@ class NewsletterController extends Controller
         // Store subscriber in database
         // This is just a placeholder - implement your database logic here
 
-        Newsletter::create([
+        /* Newsletter::create([
             'name' => $request->name,
             'email' => $request->email
-        ]);
+        ]); */
         
         // Send welcome email
         Mail::to($request->email)
